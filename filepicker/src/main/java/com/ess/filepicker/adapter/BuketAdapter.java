@@ -45,7 +45,6 @@ public class BuketAdapter extends CursorAdapter{
         ((TextView) view.findViewById(R.id.album_name)).setText(album.getDisplayName(context));
         ((TextView) view.findViewById(R.id.album_media_count)).setText(String.valueOf(album.getCount()));
         RequestOptions options = new RequestOptions()
-                .centerCrop()
                 .placeholder(mPlaceholder);
         Glide
                 .with(context)

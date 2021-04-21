@@ -48,7 +48,6 @@ public class EssMediaAdapter extends BaseQuickAdapter<EssFile, BaseViewHolder> {
             helper.itemView.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, mImageResize));
             ImageView imageView = helper.getView(R.id.media_thumbnail);
             RequestOptions options = new RequestOptions()
-                    .centerCrop()
                     .override(mImageResize, mImageResize)
                     .placeholder(SelectOptions.getInstance().placeHolder == null ? mContext.getResources().getDrawable(R.mipmap.png_holder) : SelectOptions.getInstance().placeHolder);
             Glide

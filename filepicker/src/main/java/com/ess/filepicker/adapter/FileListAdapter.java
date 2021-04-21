@@ -83,7 +83,6 @@ public class FileListAdapter extends BaseQuickAdapter<EssFile, BaseViewHolder> {
                 break;
             case "gif":
                 RequestOptions options = new RequestOptions()
-                        .centerCrop()
                         .placeholder(R.mipmap.gif);
                 Glide
                         .with(mContext)
@@ -95,7 +94,6 @@ public class FileListAdapter extends BaseQuickAdapter<EssFile, BaseViewHolder> {
             case "jpeg":
             case "png":
                 RequestOptions options2 = new RequestOptions()
-                        .centerCrop()
                         .placeholder(R.mipmap.png);
                 Glide
                         .with(mContext)
